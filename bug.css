@@ -1,0 +1,1 @@
+The CSS property `calc()` is used incorrectly, resulting in unexpected behavior. Specifically, the calculation involves using percentages within a `calc()` expression that is subtracting values.  The browser may interpret this in unexpected ways, leading to incorrect layout or rendering.
