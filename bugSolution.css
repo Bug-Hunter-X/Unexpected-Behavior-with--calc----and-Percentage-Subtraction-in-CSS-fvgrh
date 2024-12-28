@@ -1,0 +1,18 @@
+Instead of subtracting percentages directly, consider converting the percentages to pixels or using alternative layout techniques to achieve the desired result.  This avoids ambiguity and ensures consistent behavior across browsers. Example:
+
+```css
+/* Problematic code (bug.css) */
+.element {
+  width: calc(100% - 50%); /* Incorrect: Can lead to unexpected behavior */
+}
+
+/* Solution (bugSolution.css) */
+.element {
+  width: 50%; /* Or use a fixed pixel width */
+}
+
+/* Alternative using viewport units */
+.element {
+  width: calc(100vw - 500px); /*Example using viewport width and fixed pixels. Adjust as needed */
+}
+```
